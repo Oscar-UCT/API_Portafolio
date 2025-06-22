@@ -1,0 +1,15 @@
+input::file-selector-button
+{
+    display: none;
+}
+
+body
+{
+    background-image: url(../imgs/diagonales-decalees.png);
+}
+
+.efecto-transparencia
+{
+    background-color: hsla(0, 0%, 100%, 0.3) !important;
+    backdrop-filter: blur(10px) !important;
+}
