@@ -9,6 +9,7 @@ Para el diseño se usó Bootstrap, con ajustes mínimos en CSS.
 
 ## Uso de IA
 Para este proyecto se usó **ChatGPT** de forma general.\
+[Chat](https://chatgpt.com/share/685aee54-9bd4-800c-9b6d-d08bb644af52)
 El código más relevante es el siguiente:\
 \
 Este código dentro de *proyectos.php* permitió arreglar un problema interno relacionado al servidor usado, el cual solo permite los métodos **GET** y **POST**. Con este código, una solicitud **POST** puede contener un atributo personalizado, más notoriamente para permitir **DELETE** y **PATCH**.
