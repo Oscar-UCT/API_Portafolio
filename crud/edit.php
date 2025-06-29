@@ -110,7 +110,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       <label for="imagen" class="form-label btn btn-outline-success">
         Subir Imágen
       </label>
-      <input type="file" id="imagen" name="imagen" accept="image/png, image/jpeg" required><br>
+      <input type="file" id="imagen" name="imagen" accept="image/png, image/jpeg"><br>
     </div>
     <button type="submit" class="btn btn-success">Editar</button>
   </form>
