@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   ];
 
   // Validación simple
-  if (empty($data['titulo']) || empty($data['descripcion']) || empty($data['imagen'])) {
+  if (empty($data['titulo']) || empty($data['descripcion'])) {
     die("Error: Título, descripción e imagen son obligatorios.");
   }
 
