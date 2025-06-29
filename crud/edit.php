@@ -23,6 +23,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     'url_produccion' => $_POST['url_produccion'],
   ];
 
+  // Validación simple
+  if (empty($data['titulo']) || empty($data['descripcion']) || empty($data['imagen'])) {
+    die("Error: Título, descripción e imagen son obligatorios.");
+  }
+
   // Detecta si se desea subir una imágen nueva
   if (!empty($_FILES['imagen']['name'])) {
     $img = $_FILES['imagen']['name'];
