@@ -96,7 +96,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </div>
     <div class="mb-3">
       <label for="descripcion" class="form-label">Descripción (máximo 200 carácteres)</label>
-      <textarea id="descripcion" name="descripcion" maxlength="200" class="form-control" style="resize: none;"><?= $proyecto['descripcion'] ?></textarea>
+      <textarea id="descripcion" name="descripcion" maxlength="200" class="form-control" style="resize: none;" required><?= $proyecto['descripcion'] ?></textarea>
     </div>
     <div class="mb-3">
       <label for="url_github" class="form-label">URL GitHub</label>
@@ -110,7 +110,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       <label for="imagen" class="form-label btn btn-outline-success">
         Subir Imágen
       </label>
-      <input type="file" id="imagen" name="imagen" accept="image/png, image/jpeg" s><br>
+      <input type="file" id="imagen" name="imagen" accept="image/png, image/jpeg" required><br>
     </div>
     <button type="submit" class="btn btn-success">Editar</button>
   </form>
