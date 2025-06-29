@@ -1,5 +1,6 @@
 <?php
 session_start();
+session_regenerate_id(true); 
 
 $json = file_get_contents('https://teclab.uct.cl/~oscar.cariaga/portafolio-admin/api/proyectos.php');
 $proyectos = json_decode($json, true);

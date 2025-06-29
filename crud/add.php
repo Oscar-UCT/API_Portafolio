@@ -23,6 +23,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     'imagen' => $img
   ];
 
+  // Validación simple
+  if (empty($data['titulo']) || empty($data['descripcion']) || empty($data['imagen'])) {
+    die("Error: Título, descripción e imagen son obligatorios.");
+  }
+
   session_write_close();
 
   $ch = curl_init('https://teclab.uct.cl/~oscar.cariaga/portafolio-admin/api/proyectos.php');
@@ -34,6 +39,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   ]);
   curl_exec($ch);
   curl_close($ch);
+
   header("Location: ../index.php");
   exit;
 }
